@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# This script configures a subdomain
+func()
+{
+    SUB_DOMAIN="$2"
+    DOMAIN_COMPLETE="$2.$1"
+    INFO="$(dig "$DOMAIN_COMPLETE" | grep 'ANSWER SECTION' -A1 | awk 'NR==2')"
+    IP=$(echo "$INFO" | awk '{print $5}')
+    RECORD=$(echo "$INFO" | awk '{print $4}')
+    echo The subdomain "$SUB_DOMAIN" is a "$RECORD" record and points to "$IP"
+}
+
+
+if [[ -z "$2" ]]
+then   
+    SUB_DOMAIN_LIST="www lb-01 web-01 web-02"
+    for it in $SUB_DOMAIN_LIST; do
+	func "$1" "$it"
+    done
+else
+    func "$1" "$2"
+fi
+
+exit 0
