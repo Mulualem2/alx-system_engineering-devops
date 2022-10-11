@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Script that runs nginx as nginx
+sudo pkill -o apache2
+sudo chmod 744 /etc/nginx/nginx.conf
+sudo sed -i 's/80 default_server/8080 default_server/' /etc/nginx/sites-available/default
+su nginx -c 'service nginx restart'
