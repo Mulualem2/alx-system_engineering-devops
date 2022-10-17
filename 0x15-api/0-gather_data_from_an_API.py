@@ -20,6 +20,6 @@ if __name__ == '__main__':
     TOTAL_NUMBER_OF_TASKS = len(req)
 
     print('Employee {} is done with tasks({}/{}):'.
-          format(EMPLOYEE_NAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS))
+          format(USERNAME, NUMBER_OF_DONE_TASKS, TOTAL_NUMBER_OF_TASKS))
     for title in TASK_TITLE:
         print('\t {}'.format(title))
