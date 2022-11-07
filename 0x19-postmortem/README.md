@@ -8,7 +8,7 @@ Security Team is patching a security vulnerability in the Program.
 Customers reaching the site after the reboot scheduled time of 2:30 AM to 8:30 AM could not reach the site, affecting 100% of them. 
 The root cause of the outage was due to the data on the the server not auto-mounting at boot time. 
 The SRE mistakenly acknowledged the incident as something normal during a server reboot and closed all subsequent alerts.
-Timeline (all times in Pacific Time)
+Timeline (all times in East Africa Time(EAT))
 - 12:30 AM: Reboot begins
 - 2:26 AM: Outage begins
 - 2:26 AM: Alerts sent to teams
