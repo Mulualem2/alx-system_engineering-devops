@@ -1,5 +1,5 @@
 # Ethio Telecom Server Error
-![Server Error]{https://images.pexels.com/photos/6466141/pexels-photo-6466141.jpeg?auto=compress&cs=tinysrgb&w=600}
+![Server Error](https://images.pexels.com/photos/6466141/pexels-photo-6466141.jpeg?auto=compress&cs=tinysrgb&w=600)
 ## Issue Summary
 From 12:30 AM to 4:30 AM, Ethio telecome server was  experienced an outage
 due to a prescheduled reboot that ended in failure. The points of failure are coming from the rebooting of the load balancer or cache server. 
